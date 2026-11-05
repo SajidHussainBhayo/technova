@@ -1,0 +1,54 @@
+
+/* Global website styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Smooth scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Feature cards */
+
+.feature-card {
+  border: none !important;
+  border-radius: 12px !important;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Footer links */
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0d6efd !important;
+}
+
+/* Mobile responsive styling */
+
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2.2rem !important;
+  }
+
+  .hero-section {
+    padding: 65px 15px !important;
+  }
+}
