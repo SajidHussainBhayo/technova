@@ -6,23 +6,33 @@ import Button from 'react-bootstrap/Button';
 
 function MyNavbar() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar
+      expand="lg"
+      className="custom-navbar"
+      variant="dark"
+    >
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="#home" className="brand-logo">
+          <span className="brand-icon">T</span>
           TechNova
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="main-navbar" />
 
         <Navbar.Collapse id="main-navbar">
-          <Nav className="ms-auto">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">Features</Nav.Link>
-            <Nav.Link href="#">About</Nav.Link>
-            <Nav.Link href="#">Contact</Nav.Link>
+          <Nav className="mx-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#services">Services</Nav.Link>
+            <Nav.Link href="#testimonials">Reviews</Nav.Link>
           </Nav>
 
-          <Button variant="primary" className="ms-lg-3">
+          <Button
+            variant="primary"
+            href="#contact"
+            className="nav-button"
+          >
             Get Started
           </Button>
         </Navbar.Collapse>

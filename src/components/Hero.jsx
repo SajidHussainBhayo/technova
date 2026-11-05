@@ -3,39 +3,65 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
 function Hero() {
-  const heading = "Build Your Future With TechNova";
-
-  const description =
-    "Discover modern technology solutions that make your work easier, faster, and smarter.";
-
   return (
-    <div
-  className="hero-section"
-  style={{
-        background: 'linear-gradient(135deg, #0d6efd, #6610f2)',
-        color: 'white',
-        padding: '100px 20px',
-        textAlign: 'center'
-      }}
-    >
+    <section id="home" className="hero-section">
       <Container>
-        <h1 className="display-3 fw-bold mb-4 hero-heading">
-          {heading}
-        </h1>
+        <div className="hero-content">
 
-        <p className="lead mb-4">
-          {description}
-        </p>
+          <span className="hero-badge">
+            ✦ INNOVATION MEETS TECHNOLOGY
+          </span>
 
-        <Button variant="light" size="lg" className="me-3">
-          Get Started
-        </Button>
+          <h1>
+            Building a <span>Smarter</span>
+            <br />
+            Digital Future
+          </h1>
 
-        <Button variant="outline-light" size="lg">
-          Learn More
-        </Button>
+          <p>
+            We create modern technology solutions that help
+            businesses grow, work smarter, and achieve more
+            through innovation.
+          </p>
+
+          <div className="hero-buttons">
+            <Button
+              variant="primary"
+              size="lg"
+              href="#services"
+            >
+              Explore Services →
+            </Button>
+
+            <Button
+              variant="outline-light"
+              size="lg"
+              href="#about"
+            >
+              Discover More
+            </Button>
+          </div>
+
+          <div className="hero-stats">
+            <div>
+              <h3>50+</h3>
+              <p>Projects</p>
+            </div>
+
+            <div>
+              <h3>30+</h3>
+              <p>Happy Clients</p>
+            </div>
+
+            <div>
+              <h3>24/7</h3>
+              <p>Support</p>
+            </div>
+          </div>
+
+        </div>
       </Container>
-    </div>
+    </section>
   );
 }
 
